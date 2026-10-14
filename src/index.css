@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #e8e9df;
+  background: #171916;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --bg: #171916;
+  --bg-raised: #1d201c;
+  --bg-panel: #20231f;
+  --paper: #e8e9df;
+  --muted: #a6aaa0;
+  --faint: #777d73;
+  --line: rgba(232, 233, 223, 0.13);
+  --line-bright: rgba(232, 233, 223, 0.24);
+  --acid: #c6f36a;
+  --teal: #86cfc3;
+  --mono: 'DM Mono', monospace;
+  --display: 'Space Grotesk', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; scroll-padding-top: 88px; scrollbar-color: #636b5b var(--bg); }
+body { min-width: 320px; margin: 0; background-color: var(--bg); background-image: radial-gradient(rgba(232, 233, 223, 0.07) 0.45px, transparent 0.45px); background-size: 5px 5px; color: var(--paper); }
+body::after { position: fixed; z-index: 10; inset: 0; pointer-events: none; content: ''; opacity: 0.11; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E"); }
+button, a { font: inherit; }
+a { color: inherit; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--acid); outline-offset: 4px; }
+::selection { color: #171916; background: var(--acid); }
+#root { min-height: 100vh; overflow: clip; }
+.sr-only, .skip-link:not(:focus) { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+.skip-link:focus { position: fixed; z-index: 30; top: 10px; left: 10px; padding: 12px 16px; color: var(--bg); background: var(--acid); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
